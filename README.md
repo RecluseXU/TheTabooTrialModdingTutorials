@@ -1,30 +1,31 @@
 # 禁忌试炼外观MOD制作教程  
 
 - [禁忌试炼外观MOD制作教程](#禁忌试炼外观mod制作教程)
-	- [环境准备](#环境准备)
-		- [Unity](#unity)
-			- [1. UnityHub安装](#1-unityhub安装)
-			- [2. 安装Unity 2022.1.23f1](#2-安装unity-2022123f1)
-		- [Blender](#blender)
-	- [武器MOD制作](#武器mod制作)
-		- [1. 在工具目录创建MOD目录](#1-在工具目录创建mod目录)
-		- [2. 创建Blender项目保存到MOD目录](#2-创建blender项目保存到mod目录)
-		- [3. 导入 武器MOD样例模型](#3-导入-武器mod样例模型)
-		- [4. 导入 外部模型](#4-导入-外部模型)
-		- [5. 将所有外部模型合并到只剩下一个](#5-将所有外部模型合并到只剩下一个)
-		- [5. 调整外部模型大小与位置，对齐 武器MOD样例模型](#5-调整外部模型大小与位置对齐-武器mod样例模型)
-		- [6. 合并模型，合并贴图，调整UV](#6-合并模型合并贴图调整uv)
-		- [7. 删除武器MOD样例模型](#7-删除武器mod样例模型)
-		- [8. 保存Blender项目](#8-保存blender项目)
-		- [9. Unity配置Blender对象属性](#9-unity配置blender对象属性)
-		- [10. 创建对象对应 Prefab Variant](#10-创建对象对应-prefab-variant)
-		- [11. 复制 武器MOD样例材质 到MOD目录](#11-复制-武器mod样例材质-到mod目录)
-		- [12. MOD材质配置修改](#12-mod材质配置修改)
-		- [13. Prefab Variant 配置组件](#13-prefab-variant-配置组件)
-		- [14. 创建武器MOD文件](#14-创建武器mod文件)
-		- [15. 进游戏进行测试](#15-进游戏进行测试)
-	- [MOD发布上传](#mod发布上传)
-	- [其它信息](#其它信息)
+  - [环境准备](#环境准备)
+    - [Unity](#unity)
+      - [1. UnityHub安装](#1-unityhub安装)
+      - [2. 配置个人证书](#2-配置个人证书)
+      - [3. 安装Unity 2022.1.23f1](#3-安装unity-2022123f1)
+    - [Blender](#blender)
+  - [武器MOD制作](#武器mod制作)
+    - [1. 在工具目录创建MOD目录](#1-在工具目录创建mod目录)
+    - [2. 创建Blender项目保存到MOD目录](#2-创建blender项目保存到mod目录)
+    - [3. 导入 武器MOD样例模型](#3-导入-武器mod样例模型)
+    - [4. 导入 外部模型](#4-导入-外部模型)
+    - [5. 将所有外部模型合并到只剩下一个](#5-将所有外部模型合并到只剩下一个)
+    - [6. 调整外部模型大小与位置，对齐 武器MOD样例模型](#6-调整外部模型大小与位置对齐-武器mod样例模型)
+    - [7. 合并模型，合并贴图，调整UV](#7-合并模型合并贴图调整uv)
+    - [8. 删除武器MOD样例模型](#8-删除武器mod样例模型)
+    - [9. 保存Blender项目](#9-保存blender项目)
+    - [10. Unity配置Blender对象属性](#10-unity配置blender对象属性)
+    - [11. 创建对象对应 Prefab Variant](#11-创建对象对应-prefab-variant)
+    - [12. 复制 武器MOD样例材质 到MOD目录](#12-复制-武器mod样例材质-到mod目录)
+    - [13. MOD材质配置修改](#13-mod材质配置修改)
+    - [14. Prefab Variant 配置组件](#14-prefab-variant-配置组件)
+    - [15. 创建武器MOD文件](#15-创建武器mod文件)
+    - [16. 进游戏进行测试](#16-进游戏进行测试)
+  - [MOD发布上传](#mod发布上传)
+  - [其它信息](#其它信息)
 
 
 ## 环境准备
@@ -39,7 +40,13 @@ Unity官网：https://unity.com/cn
 
 
 
-#### 2. 安装Unity 2022.1.23f1  
+#### 2. 配置个人证书  
+
+![unityhub_gerenzhengshu](README.assets/unityhub_gerenzhengshu.gif)  
+
+
+
+#### 3. 安装Unity 2022.1.23f1  
 
 Unity版本归档：https://unity.com/releases/editor/archive  
 
@@ -87,7 +94,6 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 2. 项目另存为到MOD目录，项目名取一个英文名  
 
 
-
 ### 3. 导入 武器MOD样例模型  
 
 ![import_warpon_example](README.assets/import_warpon_example.gif)  
@@ -96,7 +102,10 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 4. 导入 外部模型
+### 4. 导入 外部模型  
+
+载入外部模型，清理不需要的内容  
+
 
 ### 5. 将所有外部模型合并到只剩下一个  
 
@@ -106,7 +115,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 5. 调整外部模型大小与位置，对齐 武器MOD样例模型  
+### 6. 调整外部模型大小与位置，对齐 武器MOD样例模型  
 
 ![import_warpon_model_trasform](README.assets/import_warpon_model_trasform.gif)      
 
@@ -116,19 +125,19 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 6. 合并模型，合并贴图，调整UV  
+### 7. 合并模型，合并贴图，调整UV  
 
 由于武器MOD只允许有一个模型，而一个模型只能引用一个材质，所以需要将模型合并到只剩下一个，对应的UV需要调整，对应的贴图也需要合并  
 
 
 
-### 7. 删除武器MOD样例模型  
+### 8. 删除武器MOD样例模型  
 
 为了最终MOD不显示MOD样例的模型，这里需要删除  
 
 
 
-### 8. 保存Blender项目  
+### 9. 保存Blender项目  
 
 保存项目后，Unity对应的MOD目录会根据blender数据生成对象，名字与blender文件名一致  
 
@@ -138,7 +147,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 ![image-20240303002250534](README.assets/image-20240303002250534.png)    
 
-### 9. Unity配置Blender对象属性  
+### 10. Unity配置Blender对象属性  
 
 1. 取消 ImportDeformPercent    
 
@@ -158,13 +167,13 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 10. 创建对象对应 Prefab Variant  
+### 11. 创建对象对应 Prefab Variant  
 
 ![warpon_create_prefab_variant](README.assets/warpon_create_prefab_variant.gif)  
 
 
 
-### 11. 复制 武器MOD样例材质 到MOD目录  
+### 12. 复制 武器MOD样例材质 到MOD目录  
 
 其中的材质应该是游戏里用的二次元材质，直接从样例中复制过来可以少配置一些东西  
 
@@ -174,7 +183,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 12. MOD材质配置修改   
+### 13. MOD材质配置修改   
 
 1. 材质改名
 
@@ -198,7 +207,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 13. Prefab Variant 配置组件  
+### 14. Prefab Variant 配置组件  
 
 1. 复制 武器样例MOD的 WaponVariant 到 MOD目录备用    
 
@@ -221,7 +230,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 
 
-### 14. 创建武器MOD文件  
+### 15. 创建武器MOD文件  
 
 1. 创建MOD文件  
 
@@ -247,7 +256,7 @@ Blender3.6官网下载： https://www.blender.org/download/lts/3-6/
 
 ​		在文件夹下创建一个纯数字命名的文件夹，将生成的MOD文件放进进去  
 
-### 15. 进游戏进行测试  
+### 16. 进游戏进行测试  
 
 ​	![image-20240303110357168](README.assets/image-20240303110357168.png)
 
